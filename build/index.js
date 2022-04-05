@@ -3,6 +3,13 @@ const { exit } = require('process');
 
 const runway = require('./acct-runway');  // file with account info
 
+// To create the acct-runway.js module required above... just add the following to file:
+// module.exports = {
+//   url: 'https://stylegan2-  the rest of the url of your model from runwayml',
+//  token: 'c1bz.... the rest of your token from runwayml'
+//};
+
+
 const model = new HostedModel({
   url: runway.url,
   token: runway.token
